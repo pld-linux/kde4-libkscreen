@@ -4,12 +4,12 @@
 
 Summary:	Kscreen library
 Name:		kde4-libkscreen
-Version:	1.0.2
+Version:	1.0.4
 Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{orgname}/%{version}/src/%{orgname}-%{version}.tar.xz
-# Source0-md5:	39f5316ef4f9203dd7a42180edbab122
+# Source0-md5:	802ba357e1e802d6773405bc54b47145
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	libxcb-devel
