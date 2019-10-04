@@ -5,11 +5,12 @@
 Summary:	Kscreen library
 Name:		kde4-libkscreen
 Version:	1.0.5
-Release:	3
+Release:	4
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	ftp://ftp.kde.org/pub/kde/%{_state}/%{orgname}/%{version}/src/%{orgname}-%{version}.tar.xz
 # Source0-md5:	b1cc2805cd5ff468d534d75cbab69426
+Patch0:		cmake.patch
 URL:		http://www.kde.org/
 BuildRequires:	kde4-kdelibs-devel >= %{version}
 BuildRequires:	libxcb-devel
@@ -31,6 +32,7 @@ Header files for libkscreen development.
 
 %prep
 %setup -q -n %{orgname}-%{version}
+%patch0 -p1
 
 %build
 install -d build
